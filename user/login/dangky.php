@@ -14,19 +14,20 @@
           <p>Xin hãy nhập biểu mẫu bên dưới để đăng ký.</p>
           <hr>
           <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Nhập Email" name="user_email" required>
+          <input type="text" placeholder="Nhập Email" name="email" required>
           <label for="name"><b>Họ tên</b></label>
-          <input type="text" placeholder="Nhập Họ tên" name="user_name" required>
+          <input type="text" placeholder="Nhập Họ tên" name="fullname" required>
           <label for="name"><b>Username</b></label>
-          <input type="text" placeholder="Nhập Username" name="user_login_name" required>
+          <input type="text" placeholder="Nhập Username" name="username" required>
           <label for="phonenumber"><b>Số điện thoại</b></label>
           <input type="text" placeholder="Nhập Số điện thoại" name="number_phone" required>
           <label for="address"><b>Địa chỉ</b></label>
-          <input type="text" placeholder="Nhập Địa Chỉ" name="user_address " required="required">
+          <input type="text" placeholder="Nhập Địa Chỉ" name="address " required>
          <label for="psw"><b>Mật Khẩu</b></label>
-          <input type="password" placeholder="Nhập Mật Khẩu" name="pass" required>
-         <!-- <label for="pswrepeat"><b>Nhập Lại Mật Khẩu</b></label>
-          <input type="password" placeholder="Nhập Lại Mật Khẩu" name="pswrepeat" required> -->
+          <input type="password" placeholder="Nhập Mật Khẩu" name="password" required>
+         <label for="pswrepeat"><b>Nhập Lại Mật Khẩu</b></label>
+          <input type="password" placeholder="Nhập Lại Mật Khẩu" name="pswrepeat" required>
+        
           
          <div class="clearfix">
             <button type="submit" class="signupbtn" name="submit">Đăng ký</button>

@@ -48,9 +48,8 @@
 					<input type="text" name="text" placeholder="Nhập từ khóa ...">
 					<input type="submit" name="submit" value="Tìm Kiếm">
 				</div>
-				<div id="cart" class="col-md-2 col-sm-12 col-xs-12">
-					<a class="gio"  href="cart.html">Giỏ hàng</a>
-					<a href="#">6</a>				    
+				<div id="cart" class="fa fa-shopping-bag">
+					<a class="gio"  href="">Giỏ hàng</a>			    
 				</div>
 				
 					

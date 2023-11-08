@@ -145,11 +145,11 @@ class ControllersComputer
         $_SESSION['phone'] = $result['phone'];
         $_SESSION['address'] = $result['address'];
         echo $result['address'];
-        $_SESSION['level'] = $result['level'];
-        if ($result['level'] == 2){
+        $_SESSION['role'] = $result['role'];
+        if ($result['role'] == 1){
             header("location:index.php?task=pageuser");
-        }elseif ($result['level'] == 1){
-            header("location:index.php?task=pagehome");
+        }elseif ($result['role'] == 0){
+            header("location:index.php?task=pagemanager");
         }
     }
     // dang ky

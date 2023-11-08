@@ -9,12 +9,8 @@ $task =isset($_GET['task'])? $_GET['task']:null;
 
 //login
 
-$name = isset($_POST['name'])? $_POST['name']:null;
-$email = isset($_POST['email'])? $_POST['email']:null;
-$phone = isset($_POST['phone'])? $_POST['phone']:null;
-$address = isset($_POST['address'])? $_POST['address']:null;
+$user_login_name = isset($_POST['user_login_name'])? $_POST['user_login_name']:null;
 $password = isset($_POST['password'])? $_POST['password']:null;
-$repassword = isset($_POST['repassword'])? $_POST['repassword']:null;
 $created = date("Y.m.d");
 
 
@@ -48,14 +44,14 @@ if (isset($_POST['login'])){
 }
 // dang ky
 if (isset($_POST['register'])){
-    if (empty($name) || empty($email) || empty($phone || empty($address)  || empty($password) || empty($repassword))){
+    if (empty($user_login_name) || empty($user_email) || empty($phone || empty($address)  || empty($password) || empty($repassword))){
         $message = "Không được để trống !";
         echo "<script type='text/javascript'>alert('$message');</script>";
     }elseif ($password != $repassword){
         $message = "Mật khẩu không trùng nhau !";
         echo "<script type='text/javascript'>alert('$message');</script>";
-    }elseif (isset($name) && isset($email) && isset($phone) && isset($address)  && isset($password) && isset($repassword) && $repassword = $password){
-        $ControllComputer->doRegister($name, $email, $phone, $address, $password, $created);
+    }elseif (isset($user_login_name) && isset($user_user_email) && isset($phone) && isset($address)  && isset($password) && isset($repassword) && $repassword = $password){
+        $ControllComputer->doRegister($user_login_name, $user_email, $phone, $address, $password, $created);
     }
 }
 // tim kiem san pham
